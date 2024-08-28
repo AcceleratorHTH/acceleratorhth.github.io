@@ -10,3 +10,5 @@ end
 
 gem 'tzinfo', '2.0.6'
 gem 'tzinfo-data', '1.2024.1'
+gem 'csv'
+gem 'base64'

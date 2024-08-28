@@ -2,7 +2,7 @@
  * The main dark mode styles
  */
 
-@mixin dark-scheme {
+ @mixin dark-scheme {
   /* Framework color */
   --main-bg: rgb(27, 27, 30);
   --mask-bg: rgb(68, 69, 70);
@@ -27,12 +27,7 @@
   --checkbox-color: rgb(118, 120, 121);
   --checkbox-checked-color: var(--link-color);
   --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%);
-  --shimmer-bg: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(58, 55, 55, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  --shimmer-bg: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(58, 55, 55, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
 
   /* Sidebar */
   --site-title-color: #717070;
@@ -69,8 +64,7 @@
   --btn-share-hover-color: #bfc1ca;
   --card-bg: #1e1e1e;
   --card-hovor-bg: #464d51;
-  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.24) 0 0 0 1px;
+  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0, rgb(137, 135, 135, 0.24) 0 0 0 1px;
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;
@@ -92,13 +86,8 @@
 
   /* categories */
   --categories-border: rgb(64, 66, 69, 0.5);
-  --categories-hover-bg: rgb(73, 75, 76);
-  --categories-icon-hover-color: white;
 
-  /* archives */
-  --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(63, 65, 68);
-  --timeline-year-dot-color: var(--timeline-color);
+  color-scheme: dark;
 
   .light {
     display: none;
@@ -137,8 +126,6 @@
       rgb(26, 26, 30)
     );
   }
-
-  color-scheme: dark;
 
   /* stylelint-disable-next-line selector-id-pattern */
   #disqus_thread {

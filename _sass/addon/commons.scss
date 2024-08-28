@@ -1,6 +1,8 @@
 /* The common styles */
 
 html {
+  font-size: 16px;
+
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
     &[data-mode='light'] {
@@ -23,7 +25,6 @@ html {
     }
   }
 
-  font-size: 16px;
 }
 
 body {
@@ -146,6 +147,7 @@ footer {
 
     &:hover {
       @extend %link-hover;
+      color: inherit;
     }
   }
 
@@ -158,6 +160,7 @@ footer {
     margin-bottom: 0;
   }
 }
+
 
 /* fontawesome icons */
 i {
@@ -224,7 +227,9 @@ i {
 
     @extend %no-bottom-border;
 
-    color: inherit;
+    & {
+      color: inherit;
+    }
   }
 }
 
@@ -688,8 +693,10 @@ $btn-mb: 0.5rem;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  & {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
   %sidebar-link-hover {
     &:hover {
@@ -1044,8 +1051,10 @@ search {
     @extend %no-bottom-border;
     @extend %heading;
 
-    font-size: 1.4rem;
-    line-height: 2.5rem;
+    & {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
   }
 
   > article {
