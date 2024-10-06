@@ -5,7 +5,6 @@ author: Pr0pylTh10ur4C1L
 date: 2024-06-12 12:04:00 +0700
 categories: [Mathematic]
 tags: []
-pin: true
 math: true
 mermaid: true
 published: false
