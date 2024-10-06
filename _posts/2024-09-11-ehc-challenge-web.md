@@ -1,5 +1,5 @@
 ---
-title: CyberSpace CTF 2024
+title: EHC - Web Challenge
 description: CTF-Web
 author: Pr0pylTh10ur4C1L
 date: 2024-09-11 18:41:00 +0700
